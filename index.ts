@@ -1,13 +1,15 @@
-import express, { Request, Response } from "express";
+import express, { Express, Request, Response } from "express";
 import http from "http";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import compression from "compression";
 import cors from "cors";
 import mongoose from "mongoose";
+// import { Request, Response } from "express";
 
 require("dotenv").config();
-const app = express();
+// const express: express = require("express");
+const app: Express = express();
 
 app.use(
   cors({
